@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="AdornerDemo.MainWindow"
+        Width="800" Height="600" WindowStartupLocation="CenterScreen"
+        Title="AdornerDemo">
+
+  <Canvas Name="Canvas" Background="WhiteSmoke" Width="600" Height="450">
+
+    <Rectangle Name="Rect1" Width="150" Height="100" 
+               Canvas.Left="225" Canvas.Top="200" 
+               Fill="Red" />
+
+    <Rectangle Name="Rect" Width="150" Height="100" 
+               Canvas.Left="225" Canvas.Top="200" 
+               Fill="Red"
+               Opacity="0.5"/>
+
+    <Thumb Name="RotateThumb" 
+           DragStarted="RotateThumb_OnDragStarted" 
+           DragDelta="RotateThumb_OnDragDelta" 
+           DragCompleted="RotateThumb_OnDragCompleted"
+           Canvas.Left="295" Canvas.Top="160">
+      <Thumb.Template>
+        <ControlTemplate>
+          <Rectangle Width="10" Height="10" Fill="Blue" />
+        </ControlTemplate>
+      </Thumb.Template>
+    </Thumb>
+
+  </Canvas>
+
+</Window>
