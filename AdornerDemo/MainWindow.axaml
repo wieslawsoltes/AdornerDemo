@@ -24,7 +24,22 @@
           StrokeThickness="2"
           StartPoint="300,150"
           EndPoint="300,200"/>
-    
+
+    <Line Stroke="Blue"
+          StrokeThickness="2"
+          StartPoint="300,300"
+          EndPoint="300,350"/>
+
+    <Line Stroke="Blue"
+          StrokeThickness="2"
+          StartPoint="175,250"
+          EndPoint="225,250"/>
+
+    <Line Stroke="Blue"
+          StrokeThickness="2"
+          StartPoint="375,250"
+          EndPoint="425,250"/>
+
     <Thumb Name="RotateThumb" 
            DragStarted="RotateThumb_OnDragStarted" 
            DragDelta="RotateThumb_OnDragDelta" 
