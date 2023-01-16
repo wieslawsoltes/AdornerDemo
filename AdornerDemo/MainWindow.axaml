@@ -22,7 +22,7 @@
            DragStarted="RotateThumb_OnDragStarted" 
            DragDelta="RotateThumb_OnDragDelta" 
            DragCompleted="RotateThumb_OnDragCompleted"
-           Canvas.Left="295" Canvas.Top="160">
+           Canvas.Left="295" Canvas.Top="150">
       <Thumb.Template>
         <ControlTemplate>
           <Rectangle Width="10" Height="10" Fill="Blue" />
