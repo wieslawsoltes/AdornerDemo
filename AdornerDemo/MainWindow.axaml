@@ -9,15 +9,22 @@
 
   <Canvas Name="Canvas" Background="WhiteSmoke" Width="600" Height="450">
 
+    <!--
     <Rectangle Name="Rect1" Width="150" Height="100" 
                Canvas.Left="225" Canvas.Top="200" 
                Fill="Red" />
+    -->
 
     <Rectangle Name="Rect" Width="150" Height="100" 
                Canvas.Left="225" Canvas.Top="200" 
                Fill="Red"
-               Opacity="0.5"/>
+               Opacity="1.0"/>
 
+    <Line Stroke="Blue"
+          StrokeThickness="2"
+          StartPoint="300,150"
+          EndPoint="300,200"/>
+    
     <Thumb Name="RotateThumb" 
            DragStarted="RotateThumb_OnDragStarted" 
            DragDelta="RotateThumb_OnDragDelta" 
@@ -25,7 +32,7 @@
            Canvas.Left="295" Canvas.Top="150">
       <Thumb.Template>
         <ControlTemplate>
-          <Rectangle Width="10" Height="10" Fill="Blue" />
+          <Ellipse Width="10" Height="10" Fill="Blue" />
         </ControlTemplate>
       </Thumb.Template>
     </Thumb>
